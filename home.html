@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <title>Pokesearcher</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <img src="./Img/LogoPokesearcher.png" alt="" width="200px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero" id="here">Incio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pokedex.html">Pokedex</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero vh-100 d-flex" id="hero">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-12 mx-auto">
+          <div class="col-xxl-12 text-box">
+            <h3>BIENVENIDO A</h3>
+            <h1 class="display-4">POKESEARCHER</h1>
+            <p>Estás a un paso de coleccionar el mundo pokemon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section id="destacadas">
+    <div class="container">
+      <div class="row text-center text-white">
+        <div class="col-12 section-intro">
+          <h1>DESTACADOS</h1>
+          <p>Estas son algunas de las páginas que nos llamaron la atención por sus diseños, estructuras e <br> interacciones en su desarrollo.</p>
+          <div class="hline"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box-item col-lg-4">
+          <div class="flip-box" id="carta1">
+            <div class="flip-box-front text-center" style="background-image: url(./Img/pag1.png);">
+            </div>
+            <div class="flip-box-back text-center" style="background-image: url(./Img/reverse.png);">
+              <div class="inner color-white">
+                <h3 class="flip-box-header">Quinnton J Harris</h3>
+                <p class="mb-0">El currículum de Harris, con numerosas fotografías que narran su historia personal, parece una
+                  especie de álbum de recortes digital. Abarca todas las áreas de una hoja de vida (e incluso más) y
+                  describe su formación académica de manera sumamente visual</p>
+                <a href="https://www.quinntonharris.com"><button class="flip-box-btn">Conoce más</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-item col-lg-4">
+          <div class="flip-box" id="carta2">
+            <div class="flip-box-front text-center" style="background-image: url(./Img/pag2.png);">
+            </div>
+            <div class="flip-box-back text-center" style="background-image: url(./Img/reverse.png);">
+              <div class="inner color-white">
+                <h3 class="flip-box-header">Atlantic Records</h3>
+                <p class="mb-0">Combina el estilo clásico con lo moderno, evidenciando una forma novedosa y visualmente
+                  atractiva de adaptar la industria musical a los nuevos tiempos. Además, incluyendo puntos de
+                  interacción como
+                  listas de música. </p>
+                  <a href="https://www.atlanticrecords.com"><button class="flip-box-btn">Conoce más</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-item col-lg-4">
+          <div class="flip-box" id="carta3">
+            <div class="flip-box-front text-center" style="background-image: url(./Img/pag3.png);">
+            </div>
+            <div class="flip-box-back text-center" style="background-image: url(./Img/reverse.png);">
+              <div class="inner color-white">
+                <h3 class="flip-box-header">Tarot-o-Bot</h3>
+                <p class="mb-0">Es un proyecto creado con motivo del 7º aniversario del estudio de diseño Illo. Este
+                  generador de
+                  tarot “predice” el futuro de la industria creativa. La página de inicio está repleta de colores y
+                  varios elementos animados con simbologías muy interesantes relacionadas con el propósito de la página.
+                </p>
+                <a href="https://tarotobot.illo.tv/"><button class="flip-box-btn">Conoce más</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-md-4 me-5">
+            <a class="logo-text text-white" href="#hero">Pokesearcher<a>
+                <p class="text-white">Esta plataforma te permitirá acceder a las descripciones de los pokemones
+                  disponibles <br> en el PokeAPI, de
+                  manera rápida y fácil.</p>
+                <div class="social-icons">
+                  <a href="#">
+                    <box-icon type="logo" name="facebook-square" color="white"></box-icon>
+                  </a>
+                  <a href="#">
+                    <box-icon type='logo' name='twitter' color="white"></box-icon>
+                  </a>
+                  <a href="#">
+                    <box-icon type='logo' name='instagram-alt' color="white"></box-icon>
+                  </a>
+                </div>
+          </div>
+          <div class="col-md-3 mb-5">
+            <h5 class="title-sm text-white">Navegación</h5>
+            <div class="footer-links">
+              <a href="#hero">Inicio</a>
+              <a href="pokedex.html">Pokedesk</a>
+              <a href="about.html">Nosotros</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <h5 class="title-sm text-white">Contacto</h5>
+            <div class="footer-links text-white">
+              <p class="mb-1">Universidad EAFIT - Diseño Interactivo</p>
+              <p class="mb-1">dabarrienc@eafit.edu.co</p>
+              <p class="mb-1">gbhm003@gmail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row justify-content-between gy-3">
+          <div class="col-md-6">
+            <p class="mb-0 text-white">© Agency2022. All rights reserved</p>
+          </div>
+          <div class="col-auto">
+            <p class="mb-0 text-white">Created with ❤️ by LAS PICHULAS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Source-->
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/HomeAnim.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
+</body>
+
+</html>

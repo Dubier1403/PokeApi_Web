@@ -1,0 +1,265 @@
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to bottom, #381B6C, #511EB1, #5149C9, #3D6DCA);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: FireSans;
+    src: url(fonts/Fira_Sans/FiraSans-Medium.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: fireSans-light;
+    src: url(fonts/Fira_Sans/FiraSans-Light.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url(fonts/Kanit/Kanit-ExtraBold.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Pokmon;
+    src: url(fonts/pokmon/Pokemon\ Solid.ttf);
+    font-weight: normal;
+}
+
+.bg-dark{
+    transition: all .7s ease;
+}
+
+.navbar{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+  
+.navbar .nav-item{
+    padding: 0 2%;
+}
+  
+.navbar .nav-link{
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: Firesans;
+    border-radius: 10px;
+    color:rgba(255, 255, 255, 0.259)
+}
+  
+.navbar .nav-link:hover{
+    color: #fff;
+    background: linear-gradient(to left, #6B338A, #3596D2);
+}
+
+#here{
+    color:rgb(255, 255, 255);
+    background: linear-gradient(to left, #6B338A, #3596D2);
+}
+
+.hero {
+    background: linear-gradient(rgba(17, 36, 90, 0.5), rgba(17, 36, 90, 0.1)), url(./Img/C_Fondo.gif);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.text-box{
+    left: 3%;
+    position: absolute;
+    color: white;
+    bottom: 8%;
+}
+
+.text-box p{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: fireSans-light;
+    color: #fff;
+}
+
+.text-box h3{
+    font-size: 30pxpx;
+    font-weight: 400;
+    font-family: FireSans;
+    color: #fff;
+}
+
+.text-box h1{
+    font-size: 100px;
+    font-family: Kanit;
+    margin-left: -10;
+    color: transparent;
+    -webkit-text-stroke: 1px  #fff;
+    background-image: url(/css/Img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: relleno 25s linear infinite;
+}
+
+#destacadas{
+    background-image: url(./Img/fondo_about.png);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-intro h1{
+    font-family: FireSans;
+}
+
+.section-intro p{
+    font-family: fireSans-light;
+    font-size: 20px;
+}
+
+.color-white{
+    color: white;
+}
+
+.flip-box{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.flip-box-front, .flip-box-back{
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 475px;
+    transition: transform 0.7s;
+    backface-visibility: hidden;
+}
+
+.flip-box-front{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.flip-box .inner{
+    position:absolute;
+    left: 0;
+    width: 100%;
+    padding: 60px;
+}
+
+.flip-box-header{
+    font-size: 35px;
+}
+
+.flip-box h3{
+    font-family: FireSans;
+}
+
+.flip-box p{
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-family: fireSans-light;
+}
+
+.flip-box-btn{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin-top: 25px;
+}
+
+.flip-box-btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.flip-box-btn:active{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+footer p, a{
+    font-family: fireSans-light;
+}
+
+footer h5{
+    font-family: FireSans;
+    font-weight: 300px;
+}
+
+.logo-text{
+    font-family: Pokmon;
+    font-size: 35px;
+    letter-spacing: 2.5px;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+.footer-top{
+    background-color: #2B217B;
+    padding: 80px 20px;
+}
+
+.footer-bottom{
+    background-color: #2B217B;
+    padding: 30px 80px;
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+footer .footer-links a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover{
+    color: #3596D2;
+}
+
+@keyframes relleno{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+@keyframes Movcarta1{
+    0%{
+        transform: scale(0);
+        opacity: 0%;
+    }
+    100%{
+        transform: scale(1.0);
+        opacity: 100%;
+    }
+}

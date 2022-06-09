@@ -1,0 +1,225 @@
+body{
+  margin:0;
+  padding:0;
+  /*background: linear-gradient(to top, #222671, #2B217B, #322188, #2F318A);*/
+  background-image: url(/css/Img/fondo_about.png);
+  background-size: cover;
+}
+
+@font-face {
+  font-family: FireSans;
+  src: url(fonts/Fira_Sans/FiraSans-Medium.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: fireSans-light;
+  src: url(fonts/Fira_Sans/FiraSans-Light.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Kanit;
+  src: url(fonts/Kanit/Kanit-ExtraBold.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Pokmon;
+  src: url(fonts/pokmon/Pokemon\ Solid.ttf);
+  font-weight: normal;
+}
+
+.bg-dark{
+  transition: all .7s ease;
+}
+
+.navbar{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.navbar .nav-item{
+  padding: 0 2%;
+}
+
+.navbar .nav-link{
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-family: Firesans;
+  border-radius: 10px;
+  color:rgba(255, 255, 255, 0.91)
+}
+
+.navbar .nav-link:hover{
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to left, #6B338A, #3596D2);
+}
+
+#here{
+  color:rgb(255, 255, 255);
+  background: linear-gradient(to left, #6B338A, #3596D2);
+}
+
+.card{
+  box-shadow: 0 1 10px rgb(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: transparent;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  cursor: default;
+  transition: all .4s ease;
+  border-color: rgba(0, 0, 0, 0.47);
+}
+
+.card-area h1{
+  font-family: FireSans;
+  letter-spacing: 1.5px;
+}
+
+.card:hover{
+  box-shadow: 5 5 20px rgba(0, 0, 0, 0.819);
+  background-color: rgba(0, 0, 0, 0.689);
+}
+
+.img1 img{
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  transition: .7 ease-in-out;
+}
+
+.img2 img{
+  position: relative;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  border-radius: 100%;
+  height: 145px;
+  border: 7px solid #fff;
+  margin-top: -80px;
+  transition: .4s ease-in-out;
+}
+
+.card:hover #img2 img{
+  border-color: #713362;
+}
+
+.card:hover #img3 img{
+  border-color: #093D56;
+}
+
+.card:hover #img4 img{
+  border-color: #7F3D80;
+}
+
+.card:hover .img1 img{
+  transform: scale(1.1);
+}
+
+.main-text{
+  padding: 30px 0;
+  text-align: center;
+  
+}
+
+.main-text h2{
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px;
+  color: #fff;
+  font-family: FireSans;
+  letter-spacing: 2px;
+}
+
+.main-text p{
+  font-size: 16px;
+  padding: 0 35px;
+  color: #fff;
+  font-family: fireSans-light;
+}
+
+.card-area p{
+  margin-bottom: 3px;
+}
+
+button{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.btn{
+  font-family: FireSans;
+  border-color: transparent;
+  background-color: #381B6C;
+  color: #fff;
+}
+
+.btn:hover{
+  background-color: #000;
+  border-color: #381B6C;
+  border-width: 2px;
+  color: #fff;
+
+}
+
+.modal{
+ background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content{
+  background-color: #2A1E81;
+}
+
+.modal-content p{
+  font-family: Firesans-light;
+}
+
+.modal-header h4{
+  font-family: FireSans;
+  letter-spacing: 1.5px;
+}
+
+.modal-footer p{
+  font-size: 12px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+footer p, a{
+  font-family: fireSans-light;
+}
+
+footer h5{
+  font-family: FireSans;
+  font-weight: 300px;
+}
+
+.logo-text{
+  font-family: Pokmon;
+  font-size: 35px;
+  letter-spacing: 2.5px;
+  padding-bottom: 40px;
+  text-decoration: none;
+}
+
+.footer-top{
+  background-color: #381B6C;
+  padding: 80px 20px;
+}
+
+.footer-bottom{
+  background-color: #381B6C;
+  padding: 30px 80px;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+footer .footer-links a{
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover{
+  color: #3596D2;
+}
+

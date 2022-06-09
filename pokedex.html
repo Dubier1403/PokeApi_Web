@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="css/pokedesk.css" rel="stylesheet">
+  <title>Pokedex</title>
+</head>
+
+<body>
+
+  <section id="form">
+    <div class="container w-100 bg-dark bg-opacity-50 mt-2 mb-2 rounded-3 shadow">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+              <img src="Img/LogoPokesearcher.png" alt="" width="150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav  ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#form" id="here">Pokedex</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row align-items-stretch mt-2 mb-3">
+        <div class="col bg d-none d-lg-block text-lg-center" id="card">
+        </div>
+        <div class="col ms-4">
+          <h4 class="fw-medium text-center mb-2 mt-4 text-white">¡Bienvenido! <br> ¿Qué pokemon deseas buscar?</h4>
+          <form class="pt-2 pb-4" action="#">
+            <div class="mb-4">
+              <label for="search" class="form-label text-white">Nombre del Pokemon</label>
+              <input type="text" class="textbox" placeholder="Pokemon" id="pokename" autocomplete="off">
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-info" id="SearchPokemon">Buscar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col align-items-center ms-4">
+          <div class="flip-box text-center" id="carta1">
+            <div class="flip-box-front text-center" style="background-color: rgba(225, 225, 225, 0.08);">
+              <div class="inner color-white">
+                <div class="col w-100" id="pikachu-img-col"></div>
+                <div class="col w-100" id="pikachu-id"></div>
+                <div class="col w-100" id="pikachu-name"></div>
+              </div>
+            </div>
+            <div class="flip-box-back text-center" style="background-color: rgba(225, 225, 225, 0.08);">
+              <div class="inner-back color-white">
+                <div class="col w-100" id="Not-found"></div>
+                <div class="col w-100" id="pikachu-type"></div>
+                <div class="col w-100" id="pikachu-abilitie"></div>
+                <div class="col w-100" id="pikachu-weight"></div>
+                <div class="col w-100" id="pikachu-height"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <footer class="mt-5">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row gy-5">
+                <div class="col-md-4 me-5">
+                  <a class="logo-text text-white" href="#hero">Pokesearcher<a>
+                      <p class="text-white">Esta plataforma te permitirá acceder a las descripciones de los pokemones
+                        disponibles <br> en el PokeAPI, de
+                        manera rápida y fácil.</p>
+                      <div class="social-icons">
+                        <a href="#">
+                          <box-icon type="logo" name="facebook-square" color="white"></box-icon>
+                        </a>
+                        <a href="#">
+                          <box-icon type='logo' name='twitter' color="white"></box-icon>
+                        </a>
+                        <a href="#">
+                          <box-icon type='logo' name='instagram-alt' color="white"></box-icon>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-md-3 mb-4.5">
+                  <h5 class="title-sm text-white">Navegación</h5>
+                  <div class="footer-links">
+                    <a href="home.html">Inicio</a>
+                    <a href="#form">Pokedesk</a>
+                    <a href="about.html">Nosotros</a>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4.5">
+                  <h5 class="title-sm text-white">Contacto</h5>
+                  <div class="footer-links text-white">
+                    <p class="mb-1">Universidad EAFIT - Diseño Interactivo</p>
+                    <p class="mb-1">dabarrienc@eafit.edu.co</p>
+                    <p class="mb-1">gbhm003@gmail</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+
+  <!-- JavaScripts -->
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+  <script src="js/prueba.js"></script>
+</body>
+
+</html>
